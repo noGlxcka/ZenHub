@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Lua Script</title>
+    <script>
+        // Load and execute the Lua script from the GitHub page using loadstring
+        function loadScript() {
+            var scriptUrl = "https://noglxcka.github.io/Script";
+            fetch(scriptUrl)
+                .then(response => response.text())
+                .then(script => {
+                    // Execute the Lua script
+                    loadstring(script)();
+                })
+                .catch(error => console.error('Error loading script:', error));
+        }
+
+        // Automatically execute the script when the page loads
+        window.onload = loadScript;
+    </script>
+    <script>
+        // Lua code inside the HTML
+        -- This is the Lua code you want to execute
+        print("hi")
+    </script>
+</head>
+<body>
+    <h1>Stop Skidding Or Get Blacklisted</h1>
+</body>
+</html>
